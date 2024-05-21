@@ -1,1 +1,4 @@
-# DDL 
+# DDL Data Definition Language
+
+
+
