@@ -30,5 +30,6 @@ Hauptbefehle:
 GRANT: Zum Gewähren von Zugriffsrechten und Privilegien an Benutzer.
 REVOKE: Zum Entziehen von zuvor gewährten Privilegien.
 
+![alt text](image.png)
 
 
