@@ -119,12 +119,12 @@ Können auch Table Locks einsetzen, allerdings ist Row-Level Locking die bevorzu
 
 12.  Beschreiben Sie den Begriff Datenbank-Transaktion!
 
-    Eine Datenbank-Transaktion ist eine Gruppe von Aktionen, die zusammen in einer Datenbank ausgeführt werden. Sie funktioniert nach dem Prinzip „alles oder nichts“: Entweder werden alle Aktionen erfolgreich durchgeführt und gespeichert, oder es wird so getan, als wäre nichts passiert, wenn ein Fehler auftritt. Das hilft, die Daten genau und sicher zu halten.
+Eine Datenbank-Transaktion ist eine Gruppe von Aktionen, die zusammen in einer Datenbank ausgeführt werden. Sie funktioniert nach dem Prinzip „alles oder nichts“: Entweder werden alle Aktionen erfolgreich durchgeführt und gespeichert, oder es wird so getan, als wäre nichts passiert, wenn ein Fehler auftritt. Das hilft, die Daten genau und sicher zu halten.
       
 
 13.  Beschreiben Sie die Bedeutung von I in der Abkürzung ACID.
 
-    Das „I“ in der Abkürzung ACID, die für die Prinzipien von Datenbanktransaktionen steht, bezieht sich auf Isolation. Die Isolation stellt sicher, dass die Änderungen, die innerhalb einer einzelnen Transaktion gemacht werden, für andere gleichzeitig laufende Transaktionen unsichtbar sind, bis die Transaktion vollständig abgeschlossen ist. Dies verhindert, dass Transaktionen, die zur gleichen Zeit durchgeführt werden, sich gegenseitig beeinflussen und möglicherweise inkonsistente Daten erzeugen. Isolation trägt dazu bei, die Datenintegrität in einer Datenbankumgebung mit vielen gleichzeitigen Benutzern zu wahren.
+Das „I“ in der Abkürzung ACID, die für die Prinzipien von Datenbanktransaktionen steht, bezieht sich auf Isolation. Die Isolation stellt sicher, dass die Änderungen, die innerhalb einer einzelnen Transaktion gemacht werden, für andere gleichzeitig laufende Transaktionen unsichtbar sind, bis die Transaktion vollständig abgeschlossen ist. Dies verhindert, dass Transaktionen, die zur gleichen Zeit durchgeführt werden, sich gegenseitig beeinflussen und möglicherweise inkonsistente Daten erzeugen. Isolation trägt dazu bei, die Datenintegrität in einer Datenbankumgebung mit vielen gleichzeitigen Benutzern zu wahren.
       
 
 14.  Wie stellen Transaktionen bei einem DB-Server-Crash die Datenkonsistenz sicher? (Schwierig)
@@ -137,9 +137,9 @@ Atomicity: Stellt sicher, dass eine Transaktion komplett ausgeführt wird oder i
   
 15. Mit welcher Locking-Art wartet ein SELECT-Befehl, bis alle Transaktionen auf die angeforderte Tabelle entsperrt sind? 
 
-    Ein normaler SELECT-Befehl in Datenbanken wartet nicht auf die Freigabe von Sperren und liest Daten, ohne andere Transaktionen zu blockieren. Wenn jedoch eine konsistente Ansicht nötig ist, kann der Befehl mit LOCK IN SHARE MODE oder FOR SHARE in MySQL ausgeführt werden, um einen Shared Lock zu setzen, der dann das Warten auf die Freigabe aller relevanten Sperren beinhaltet. 
+Ein normaler SELECT-Befehl in Datenbanken wartet nicht auf die Freigabe von Sperren und liest Daten, ohne andere Transaktionen zu blockieren. Wenn jedoch eine konsistente Ansicht nötig ist, kann der Befehl mit LOCK IN SHARE MODE oder FOR SHARE in MySQL ausgeführt werden, um einen Shared Lock zu setzen, der dann das Warten auf die Freigabe aller relevanten Sperren beinhaltet. 
           
 16. Wie muss Autocommit gesetzt werden, damit jeder SQL-Befehl zu einer Transaktion gehört und damit explizit mit COMMIT abgeschlossen werden muss, damit er ausgeführt wird? 
 
-    Um zu erreichen, dass jeder SQL-Befehl explizit mit COMMIT abgeschlossen werden muss, setzen Sie Autocommit auf OFF. Dies bewirkt, dass Änderungen nicht automatisch in die Datenbank übernommen werden.
+Um zu erreichen, dass jeder SQL-Befehl explizit mit COMMIT abgeschlossen werden muss, setzen Sie Autocommit auf OFF. Dies bewirkt, dass Änderungen nicht automatisch in die Datenbank übernommen werden.
           
