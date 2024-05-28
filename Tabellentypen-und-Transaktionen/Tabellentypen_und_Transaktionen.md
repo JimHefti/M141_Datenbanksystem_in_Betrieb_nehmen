@@ -73,22 +73,23 @@
 
 8.  Welches sind Vorteile der InnoDB-Tabellen gegenüber MyISAM-Tabellen?
 
-    ___   n
+    ___   
       
 
 9.  In welchen Dateien wird die MyISAM-Tabelle KUNDEN gespeichert?
 
-    ___   
+
+    
       
 
 10.  Notieren Sie den SQL-Befehl, der die InnoDB-Tabelle BESTELLUNGEN erstellt.
 
-    ___   
+      
       
 
 11.  Welche Locking-Art ist a) bei MyISAM-Tabellen b) bei InnoDB-Tabellen möglich?
 
-    ___   
+    ----
       
 
 12.  Beschreiben Sie den Begriff Datenbank-Transaktion!
